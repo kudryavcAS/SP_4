@@ -2,14 +2,24 @@
 #include "ui_mainwindow.h"
 #include "stud.cpp"
 #include <QMessageBox>
+#include <QValidator>
 #include "view1.h"
 #include "diff.h"
 #include "intersection.h"
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    QIntValidator *validator2 = new QIntValidator(0, 100000, this);
+    ui->number_line->setValidator(validator2);
+    QIntValidator *validator3 = new QIntValidator(0, 10, this);
+    ui->group_line->setValidator(validator3);
+    QDoubleValidator *validator = new QDoubleValidator(0.0, 10.0, 2, this);
+    validator->setNotation(QDoubleValidator::StandardNotation);
+    ui->average_line->setValidator(validator);
+
 }
 
 MainWindow::~MainWindow()
@@ -199,7 +209,7 @@ void MainWindow::on_add_2_button_clicked()
     wfile.close();
 }
 
-void MainWindow::on_deletr_1_button_clicked()
+void MainWindow::on_delete_1_button_clicked()
 {
     QString fname = ui->file1_line->text();
     QFile rfile(fname);
@@ -231,7 +241,7 @@ void MainWindow::on_deletr_1_button_clicked()
 }
 
 
-void MainWindow::on_delete_1_button_clicked()
+void MainWindow::on_delete_2_button_clicked()
 {
     QString fname = ui->file2_line->text();
     QFile rfile(fname);

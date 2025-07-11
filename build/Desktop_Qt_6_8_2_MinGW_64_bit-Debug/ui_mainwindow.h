@@ -56,9 +56,9 @@ public:
     QLineEdit *group_line;
     QLineEdit *average_line;
     QPushButton *add_1_button;
-    QPushButton *deletr_1_button;
-    QPushButton *add_2_button;
     QPushButton *delete_1_button;
+    QPushButton *add_2_button;
+    QPushButton *delete_2_button;
     QPushButton *pushButton;
     QStatusBar *statusbar;
 
@@ -213,20 +213,20 @@ public:
 
         verticalLayout_2->addWidget(add_1_button);
 
-        deletr_1_button = new QPushButton(centralwidget);
-        deletr_1_button->setObjectName("deletr_1_button");
+        delete_1_button = new QPushButton(centralwidget);
+        delete_1_button->setObjectName("delete_1_button");
 
-        verticalLayout_2->addWidget(deletr_1_button);
+        verticalLayout_2->addWidget(delete_1_button);
 
         add_2_button = new QPushButton(centralwidget);
         add_2_button->setObjectName("add_2_button");
 
         verticalLayout_2->addWidget(add_2_button);
 
-        delete_1_button = new QPushButton(centralwidget);
-        delete_1_button->setObjectName("delete_1_button");
+        delete_2_button = new QPushButton(centralwidget);
+        delete_2_button->setObjectName("delete_2_button");
 
-        verticalLayout_2->addWidget(delete_1_button);
+        verticalLayout_2->addWidget(delete_2_button);
 
 
         horizontalLayout_5->addLayout(verticalLayout_2);
@@ -271,9 +271,9 @@ public:
         group_line->setPlaceholderText(QCoreApplication::translate("MainWindow", "\320\235\320\276\320\274\320\265\321\200 \320\263\321\200\321\203\320\277\320\277\321\213", nullptr));
         average_line->setPlaceholderText(QCoreApplication::translate("MainWindow", "\320\241\321\200\320\265\320\264\320\275\320\270\320\271 \320\261\320\260\320\273\320\273", nullptr));
         add_1_button->setText(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\262 \321\204\320\260\320\271\320\273 1", nullptr));
-        deletr_1_button->setText(QCoreApplication::translate("MainWindow", "\320\243\320\264\320\260\320\273\320\270\321\202\321\214 \320\270\320\267 \321\204\320\260\320\271\320\273\320\260 1", nullptr));
+        delete_1_button->setText(QCoreApplication::translate("MainWindow", "\320\243\320\264\320\260\320\273\320\270\321\202\321\214 \320\270\320\267 \321\204\320\260\320\271\320\273\320\260 1", nullptr));
         add_2_button->setText(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\262 \321\204\320\260\320\271\320\273 2", nullptr));
-        delete_1_button->setText(QCoreApplication::translate("MainWindow", "\320\243\320\264\320\260\320\273\320\270\321\202\321\214 \320\270\320\267 \321\204\320\260\320\271\320\273\320\260 2", nullptr));
+        delete_2_button->setText(QCoreApplication::translate("MainWindow", "\320\243\320\264\320\260\320\273\320\270\321\202\321\214 \320\270\320\267 \321\204\320\260\320\271\320\273\320\260 2", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\272\321\200\321\213\321\202\321\214", nullptr));
     } // retranslateUi
 

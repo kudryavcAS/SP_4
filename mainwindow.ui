@@ -223,7 +223,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="deletr_1_button">
+         <widget class="QPushButton" name="delete_1_button">
           <property name="text">
            <string>Удалить из файла 1</string>
           </property>
@@ -237,7 +237,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="delete_1_button">
+         <widget class="QPushButton" name="delete_2_button">
           <property name="text">
            <string>Удалить из файла 2</string>
           </property>

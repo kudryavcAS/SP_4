@@ -11,18 +11,15 @@ Intersection::Intersection(QVector<Student>& _stud1, QVector<Student>& _stud2, b
 
     if(x){
     for(int i=0;i<stud1.size();i++){
-
-        if(stud2.contains(stud1[i])) result.append(stud1[i]);
+            if(stud2.contains(stud1[i])) result.append(stud1[i]);
         }
     }
     else {
         result = stud1;
         for(int i=0;i<stud2.size();i++){
-
             if(!result.contains(stud2[i]))
                 result.append(stud2[i]);
         }
-
     }
     int max = result.size();
     ui->tableWidget->setRowCount(max);
